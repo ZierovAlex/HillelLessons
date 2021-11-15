@@ -1,0 +1,5 @@
+question0 = input('Привет меня зовут Жарвис, а тебя как зовут?')
+print('Как дела','"',question0,'" ?',end = ' ')
+question1 = int(input('Загадай целое число'))
+question2 = int(input('Загадай второе целое'))
+print ('Сума этих чисел',question1+question2)
