@@ -5,12 +5,12 @@ yearcheck = input('Please, enter the year you want to check if it is a leap year
 
 if yearcheck.isdigit():
     yearcheck = int(yearcheck)
-    if 1900 <= yearcheck <= 1000000:
+    if 1900 < yearcheck < 1000000:
         if (yearcheck % 4 == 0 and yearcheck % 100 != 0) or (yearcheck % 400 == 0):
             print(yearcheck, 'is a leap year')
         else:
             print(yearcheck, 'is not leap year')
     else:
-        print('Invalid data entered, please run the program again and enter the correct value, from 1900 to 1000000!')
+        print('Invalid data entered, please run the program again and enter the correct value, from 1901 to 999999!')
 else:
     print('"',yearcheck,'"', 'is not a year, please run program again and enter the correct value!')

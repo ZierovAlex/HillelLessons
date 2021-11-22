@@ -5,5 +5,8 @@
 number1 = 7
 number2 = 100
 
-number1, number2 = number1 + number2 - number1, number1 + number2 - number2 # Используем "Кортеж"
+number1 = number1 + number2
+number2 = number1 - number2
+number1 = number1 - number2
+
 print(number1, number2)
