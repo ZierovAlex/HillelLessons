@@ -11,3 +11,12 @@ while cnt < len(number):
         cnt += 1
 else:
     print('Нет повтора!')
+
+# Пришло в голову более простое решение с помощью цикла for
+
+for n in number:
+    if number.count(n) > 1:
+        print('Yes')
+        break
+else:
+    print('No')
