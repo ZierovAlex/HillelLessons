@@ -37,16 +37,33 @@ while True:
             print(f"Вы ввели число {number_guess}!")
             if number_guess < random_number:
                 counter += 1
-                number_guess = input(f"Вы не угадали! {number_guess} меньше загаданного числа! Попробуйте снова")
+                number_guess = input(
+                    f"Вы не угадали! {number_guess}"
+                    " меньше загаданного "
+                    "числа! Попробуйте снова:"
+                )
             elif number_guess > random_number:
                 counter += 1
-                number_guess = input(f"Вы не угадали! {number_guess} больше загаданного числа! Попробуйте снова")
+                number_guess = input(
+                    f"Вы не угадали! {number_guess}"
+                    " больше загаданного "
+                    "числа! Попробуйте снова:"
+                )
             elif number_guess == random_number:
-                print(f"Поздравляю! Вы угадали c {counter+1} попытки! Загаданное число {number_guess}!")
+                print(
+                    f"Поздравляю! Вы угадали c {counter+1}"
+                    f" попытки! Загаданное число {number_guess}!"
+                )
                 break
         else:
             counter += 1
-            number_guess = input('Вы ввели неверное число! Введите целое число в диапазоне от 1 до 100!')
+            number_guess = input(
+                'Вы ввели неверное число! Введите целое'
+                ' число в диапазоне от 1 до 100!'
+            )
     else:
         counter += 1
-        number_guess = input('Вы ввели неверно! Постарайтесь ввести одно число от 1 до 100!')
+        number_guess = input(
+            'Вы ввели неверно!'
+            ' Постарайтесь ввести одно число от 1 до 100!'
+        )
