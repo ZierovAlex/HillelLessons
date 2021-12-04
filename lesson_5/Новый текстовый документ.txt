@@ -1,0 +1,6 @@
+Отладка в PyCharm  в картинках https://www.jetbrains.com/help/pycharm/part-1-debugging-python-code.html?gclid=CjwKCAjw0qOIBhBhEiwAyvVcf5lOALXJKtN_K1o5NSzqDEib7gylVnbbx2alpWe4BNdt-_xH350hcBoCE3UQAvD_BwE&keymap=primary_windows#breakpoints
+
+
+Встрочная отладка кода https://adw0rd.com/2012/10/7/python-pdb/
+
+Интегрированая в python отладка https://www.jetbrains.com/help/pycharm/2021.2/debug-tool-window.html?keymap=primary_windows
