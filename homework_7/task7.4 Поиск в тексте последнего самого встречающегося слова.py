@@ -21,7 +21,6 @@ entered_text = '''
 '''
 entered_text1 = ""
 max_value = 0
-result_value = []
 result = ''
 
 for i in entered_text:
@@ -36,17 +35,22 @@ for j in working_dictionary:
     working_dictionary[j] = entered_text1.count(j)
 print(working_dictionary)
 
-# Используя еще один цикл возвращая значение каждого ключа заменяем значение
+# Используя еще один цикл возвращая значение каждого значения списка в
+# котором наполняем словарь working_dictionary1 ключами и значениями таким
+# образом что бы нужное нам слово было последним. создаем условие для
+# выведения максимального значения.
 # max_value на максимальное последнее слово кторое встречается чаще всего в
-# таксте а result записываем ключ этого максимального значения.
+# таксте а result записываем значение необходимиого элемента списка.
+
+working_dictionary1 = {}
 
 for s in entered_text1:
-    if s in working_dictionary:
-        working_dictionary[s] = working_dictionary[s] + 1
+    if s in working_dictionary1:
+        working_dictionary1[s] = working_dictionary1[s] + 1
     else:
-        working_dictionary[s] = 1
-    if working_dictionary[s] >= max_value:
-        max_value = working_dictionary[s]
+        working_dictionary1[s] = 1
+    if working_dictionary1[s] >= max_value:
+        max_value = working_dictionary1[s]
         result = s
 print(f"Элемент текста (слово или буква) '{result}' встречается чаще всего в "
       f"заданном тексте")
