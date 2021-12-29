@@ -1,33 +1,4 @@
-import random
-
-# c - column
-# r - row
-
-# 1 size
-m = input('Please enter an integer!')
-while True:
-    if m.isdigit():
-        m = int(m)
-        break
-    else:
-        m = input('You entered wrong! Please enter an integer!')
-
-# 2 generate matrix
-my_matrix = [[random.randint(1, 50) for c in range(m)] for r in range(m)]
-for r in range(len(my_matrix)):
-    for c in range(len(my_matrix)):
-        print(my_matrix[r][c], end='\t')
-    print()
-
-# summarize columns
-col_sum = [sum([my_matrix[r][c] for r in range(m)]) for c in range(m)]
-for i in range(len(col_sum)):
-    print(col_sum[i], end='\t')
-print()
-print()
-
-
-def my_sort(matrix, summa, n):
+def my_sort(matrix, summa, n) -> object:
     for j in range(n - 1):
         for c in range(n - 1 - j):
             if summa[c] > summa[c + 1]:
@@ -45,7 +16,7 @@ def my_sort(matrix, summa, n):
                 if ((c % 2 == 0) and (matrix[r][c] < matrix[r + 1][c])) \
                         or ((c % 2 != 0) and (matrix[r][c] > matrix[r +
                                                                     1][c])
-                            ):
+                ):
                     matrix[r][c], matrix[r + 1][c] = matrix[r + 1][
                                                          c], matrix[
                                                          r][c]
@@ -61,6 +32,26 @@ def my_print(my_matrix1, col_sum1, m1):
         print(col_sum1[c], end='\t')
 
 
-my_sort(my_matrix, col_sum, m)
-my_print(my_matrix, col_sum, m)
+if __name__ == "__main__":
+    import random
+    m = input('Please enter an integer!')
+    while True:
+        if m.isdigit():
+            m = int(m)
+            break
+        else:
+            m = input('You entered wrong! Please enter an integer!')
+    print()
+    my_matrix = [[random.randint(1, 50) for c in range(m)] for r in range(m)]
+    for r in range(len(my_matrix)):
+        for c in range(len(my_matrix)):
+            print(my_matrix[r][c], end='\t')
+        print()
+    col_sum = [sum([my_matrix[r][c] for r in range(m)]) for c in range(m)]
+    for i in range(len(col_sum)):
+        print(col_sum[i], end='\t')
+    print()
+    print()
 
+    my_sort(my_matrix, col_sum, m)
+    my_print(my_matrix, col_sum, m)
