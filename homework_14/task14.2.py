@@ -8,14 +8,17 @@ class TooShortNameExeption(Exception):
     def __str__(self):
         return f"Ошибка: {self.msg}"
 
+# Ошибка возникает в случае введения слишком короткого имени.
+
 
 while True:
     try:
         my_name = check.string_from_input()
-        if len(my_name) < 3:
-            raise TooShortNameExeption("Введенное имя слишком короткое имя")
+        if len(my_name) < 5:
+            raise TooShortNameExeption("Введенное имя слишком короткое!")
     except TooShortNameExeption as tsne:
         print(tsne)
+        break
     else:
         print(my_name)
         break

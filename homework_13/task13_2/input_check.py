@@ -23,7 +23,7 @@ def string_from_input():
             n = str(n)
             break
         else:
-            print('Input is not correct please try again')
+            print('Введено неверно! Попробуйте еще раз!')
 
     return n
 
