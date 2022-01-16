@@ -17,7 +17,7 @@ def integer_from_input() -> int:
 
 def string_from_input():
     while True:
-        n = input('Input your word:')
+        n = input('Пожалуйста введите имя!')
 
         if n.isalpha():
             n = str(n)
