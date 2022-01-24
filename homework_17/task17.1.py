@@ -34,7 +34,6 @@
 
 class Buffer:
     my_list = []
-    last_input = tuple()
 
     def __init__(self):
         pass
@@ -44,8 +43,7 @@ class Buffer:
     # и после очищает элементы суммы
     @classmethod
     def add(cls, *a):
-        cls.last_input = a
-        for i in cls.last_input:
+        for i in a:
             cls.my_list.append(i)
             if len(cls.my_list) == 5:
                 print(f"Accumulated 5 numbers, their sum: {sum(cls.my_list)}")
