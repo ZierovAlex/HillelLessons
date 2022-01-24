@@ -39,9 +39,6 @@ class Buffer:
         # конструктор без аргументов
         pass
 
-    # Создаем классметод который поэлементно записывает полученную
-    # последовательност и выдает сумму при накоплении пяти элементов подряд,
-    # и после очищает элементы суммы
     @classmethod
     def add(cls, *a):
         # добавить следующую часть последовательности
@@ -50,7 +47,6 @@ class Buffer:
             if len(cls.my_list) == 5:
                 print(f"Accumulated 5 numbers, their sum: {sum(cls.my_list)}")
                 cls.my_list.clear()
-
 
     @classmethod
     def get_current_par(cls):
