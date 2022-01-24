@@ -36,6 +36,7 @@ class Buffer:
     my_list = []
 
     def __init__(self):
+        # конструктор без аргументов
         pass
 
     # Создаем классметод который поэлементно записывает полученную
@@ -43,15 +44,18 @@ class Buffer:
     # и после очищает элементы суммы
     @classmethod
     def add(cls, *a):
+        # добавить следующую часть последовательности
         for i in a:
             cls.my_list.append(i)
             if len(cls.my_list) == 5:
                 print(f"Accumulated 5 numbers, their sum: {sum(cls.my_list)}")
                 cls.my_list.clear()
 
-    # Возвращаем сохраненные в текущий момент элементы последовательности
+
     @classmethod
     def get_current_par(cls):
+        # Возвращаем сохраненные в текущий момент элементы последовательности
+        # в порядке, в котором они были добавлены
         print(f"Remainder of accumulated sequence: {cls.my_list}")
         return cls.my_list
 
