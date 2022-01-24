@@ -55,9 +55,8 @@ class Buffer:
     # Возвращаем сохраненные в текущий момент элементы последовательности
     @classmethod
     def get_current_par(cls):
-        print(f"Last time you entered:{cls.last_input}")
         print(f"Remainder of accumulated sequence: {cls.my_list}")
-        return cls.last_input, cls.my_list
+        return cls.my_list
 
 
 example = Buffer()
