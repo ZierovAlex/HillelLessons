@@ -38,6 +38,7 @@ class Buffer:
 
     def __init__(self):
         pass
+
     # Создаем классметод который поэлементно записывает полученную
     # последовательност и выдает сумму при накоплении пяти элементов подряд,
     # и после очищает элементы суммы
@@ -55,7 +56,8 @@ class Buffer:
     @classmethod
     def get_current_par(cls):
         print(f"Last time you entered:{cls.last_input}")
-        return cls.last_input
+        print(f"Remainder of accumulated sequence: {cls.my_list}")
+        return cls.last_input, cls.my_list
 
 
 example = Buffer()
