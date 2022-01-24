@@ -50,7 +50,6 @@ class Buffer:
             if len(cls.my_list) == 5:
                 print(f"Accumulated 5 numbers, their sum: {sum(cls.my_list)}")
                 cls.my_list.clear()
-        print(f"Remaining accumulated numbers: {cls.my_list}")
 
     # Возвращаем сохраненные в текущий момент элементы последовательности
     @classmethod
