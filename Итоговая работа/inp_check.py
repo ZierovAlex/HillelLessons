@@ -1,20 +1,31 @@
-def check_input_search(n):
-    n = str(n)
-    while True:
-        if n.isdigit():
-            n = int(n)
-            if 2 >= n >= 0:
-                break
-            else:
-                n = input('Введена несуществующая команда, пожалуйста введите '
-                          'по чему '
-                          'искать, "0" - по имени, "1" - по фамилии, "2" - по '
-                          'номеру телефона: ')
-        else:
-            n = input('Введено некорректно, пожалуйста введите по чему '
-                      'искать, "0" - по имени, "1" - по фамилии, "2" - по '
-                      'номеру телефона: ')
-    return n
+# def check_input_commands(n, c):
+#     n = str(n)
+#     while True:
+#         if n.isdigit():
+#             n = int(n)
+#             if c > n >= 0:
+#                 break
+#             else:
+#                 n = input('Некорректный номер, попробуйте еще раз: ')
+#         else:
+#             n = input('Некорректный ввод, попробуйте еще раз: ')
+#     return n
+#
+# def check_record_number(n, notebook):
+#     n = str(n)
+#     while True:
+#         if n.isdigit():
+#             n = int(n)
+#             try:
+#                 if notebook.is_show(n):
+#                     break
+#                 else:
+#                     n = input('Некорректный номер, попробуйте еще раз: ')
+#             except Exception:
+#                 n = input('Некорректный номер, попробуйте еще раз: ')
+#         else:
+#             n = input('Некорректный ввод, попробуйте еще раз: ')
+#     return n
 
 
 def check_input_sort(n):

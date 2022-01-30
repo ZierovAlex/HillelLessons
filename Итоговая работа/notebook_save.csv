@@ -1,7 +1,8 @@
-Alex,Ziirov,067463735,Hrushevskogo str.,17.07.1992
-Dmitri,Belik,000000000,Rihtera str.,02.04.1992
-Неизвестный,Чикатило,7777777777,Ростов,1930
-Galochka,Orishich,0996578003,Hrushevskogo str.,1995
-Abashin,Alex,0674637345,Poskot,23.02.1992
-Дмитрий,Белик,03422351513513,"Улица, Пушкина, Дом, Калатушкина",02.05.1992
-Alex,Potrepanko,1231313123123,qwcwcwcwcwcw,
+Alex,Ziirov,067463735,Hrushevskogo str.,17.07.1992,True
+Dmitri,Belik,000000000,Rihtera str.,02.04.1992,True
+Неизвестный,Чикатило,7777777777,Ростов,1930,True
+Galochka,Orishich,0996578003,Hrushevskogo str.,1995,True
+Abashin,Alex,0674637345,Poskot,23.02.1992,True
+Дмитрий,Белик,03422351513513,"Улица, Пушкина, Дом, Калатушкина",02.05.1992,True
+Alex,Potrepanko,1231313123123,qwcwcwcwcwcw,,True
+Tom,Cruise,078353813903,New York,,True
